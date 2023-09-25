@@ -1,4 +1,3 @@
-
 /* Universal Elements */
 * {
     box-sizing: border-box;
@@ -15,12 +14,12 @@
     --color5: #B3C7F7;
 }
 
-a{
+a {
     color: var(--color2);
     text-decoration: none;
 }
 
-p{
+p {
     color: var(--color2);
 }
 
@@ -34,7 +33,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
 }
 
 header h1 {
@@ -42,7 +41,7 @@ header h1 {
     font-weight: bolder;
 }
 
-header ul{
+header ul {
     list-style-type: none;
     font-size: 20px;
     text-align: right;
@@ -56,30 +55,45 @@ header ul li {
     padding-left: 2%;
 }
 
-  /* Banner W/ Logo CSS */
-  .banner {
+/* Banner W/ Logo CSS */
+.banner {
     background-color: var(--color4);
-  }
-  .banner img{
+}
+
+.banner img {
     display: flex;
     margin-left: auto;
     margin-right: auto;
     padding: 9%;
     max-width: 100%;
     animation: wiggle 3s infinite;
-  }
+}
 
-  /* Wiggle Animation for Logo */
-  /* Note: % refers to the keyframes along the entire animation sequence. */
-  @keyframes wiggle {
-    0% {transform: rotate(0deg);}
-    85% {transform: rotate(0deg)}
-    90% {transform: rotate(5deg);}
-    95% {transform: rotate(-5deg);}
-    100% {transform: rotate(0deg);}
-  }
+/* Wiggle Animation for Logo */
+/* Note: % refers to the keyframes along the entire animation sequence. */
+@keyframes wiggle {
+    0% {
+        transform: rotate(0deg);
+    }
 
-  /* About Me Section */
+    85% {
+        transform: rotate(0deg)
+    }
+
+    90% {
+        transform: rotate(5deg);
+    }
+
+    95% {
+        transform: rotate(-5deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+/* About Me Section */
 article {
     padding: 2% 6% 0 6%;
     margin: auto;
@@ -87,13 +101,14 @@ article {
     color: var(--color2);
     height: auto;
     overflow: hidden;
-  }
+}
 
 article h2 {
     margin-bottom: .75%;
 }
 
-article  h3, article p {
+article h3,
+article p {
     margin-left: 22%;
     margin-bottom: 1.5%;
 }
@@ -109,14 +124,15 @@ article  h3, article p {
     margin-left: 20%;
 }
 
-  /* Portfolio Pieces */
-  .box {
+/* Portfolio Pieces */
+.box {
     display: flex;
-  }
+}
 
-  .box ul, .box li{
+.box ul,
+.box li {
     list-style: none;
-  }
+}
 
 .gallery {
     display: flex;
@@ -124,7 +140,7 @@ article  h3, article p {
     opacity: 1.0;
     gap: 0 3%;
     height: 100%;
-  }
+}
 
 .projname {
     background-color: var(--color5);
@@ -147,8 +163,8 @@ article  h3, article p {
 }
 
 /* ------ Footer ------*/
-footer{
-    font-style: italic;
+footer {
+    font-weight: bold;
     font-size: 1em;
     margin: auto;
     padding: 1%;
