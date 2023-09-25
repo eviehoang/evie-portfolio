@@ -20,6 +20,10 @@ a{
     text-decoration: none;
 }
 
+p{
+    color: var(--color2);
+}
+
 /* Header Menu */
 header {
     padding: 1.25%;
@@ -42,12 +46,11 @@ header ul{
     display: inline-block;
     font-size: 20px;
     text-align: right;
-    width: 50%;
+    width: 45%;
     padding: 0;
 }
 
 header ul li {
-    float: right;
     display: inline-block;
     list-style-type: none;
     width: 20%;
@@ -82,11 +85,18 @@ article {
     margin: auto;
     background-color: var(--color3);
     color: var(--color2);
-    width: 100%;
-
   }
 
+#portrait {
+    margin: 3%;
+    position: relative;
+    display: flex;
+}
 
+#aboutme {
+    position: static;
+    display: flex;
+}
 
   /* Footer */
   footer{
