@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --color1: #f194B8;
+    --color2: black;
+    --color3: white;
+}
+
+a{
+    color: var(--color2);
+    text-decoration: none;
+
+}
+
+/* Header Menu */
+header {
+    padding: 2%;
+    margin: auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: var(--color3);
+    color: var(--color2);
+    width: 100%;
+}
+
+header h1 {
+    display: inline;
+    font-size: 30px;
+}
+
+header ul{
+    list-style-type: none;
+    float: right;
+    display: inline-block;
+    font-size: 20px;
+    text-align: right;
+    width: 45%;
+}
+
+header ul li {
+    float: right;
+    display: inline-block;
+    list-style-type: none;
+    width: 20%;
+    
+}
+
+
+
+  /* Banner W/ Logo CSS */
+  .banner {
+    background-color: var(--color1);
+  }
+  .banner img{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5%;
+    max-width: 100%;
+  }
