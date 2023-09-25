@@ -85,17 +85,28 @@ article {
     margin: auto;
     background-color: var(--color3);
     color: var(--color2);
+    height: auto;
+    overflow: hidden;
   }
 
+article h2 {
+    margin-bottom: .75%;
+}
+
+article  h3, article p {
+    margin-left: 22%;
+    margin-bottom: 1.5%;
+}
+
 #portrait {
-    margin: 3%;
-    position: relative;
-    display: flex;
+    float: left;
+    max-height: 300px;
+
 }
 
 #aboutme {
     position: static;
-    display: flex;
+    margin-left: 20%;
 }
 
   /* Footer */
