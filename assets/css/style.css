@@ -31,29 +31,29 @@ header {
     background-color: var(--color3);
     color: var(--color2);
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     
 }
 
 header h1 {
-    display: inline;
     font-size: 30px;
     font-weight: bolder;
 }
 
 header ul{
     list-style-type: none;
-    float: right;
-    display: inline-block;
     font-size: 20px;
     text-align: right;
-    width: 45%;
-    padding: 0;
+    width: 55%;
+    padding: auto;
 }
 
 header ul li {
-    display: inline-block;
-    list-style-type: none;
-    width: 20%;
+    display: inline-flex;
+
+
 }
 
   /* Banner W/ Logo CSS */
