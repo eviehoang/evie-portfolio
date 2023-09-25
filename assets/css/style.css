@@ -109,11 +109,47 @@ article  h3, article p {
     margin-left: 20%;
 }
 
-  /* Footer */
-  footer{
+  /* Portfolio Pieces */
+  .box {
+    display: flex;
+  }
+
+  .box ul{
+    list-style: none;
+  }
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    opacity: 1.0;
+  }
+
+.projname {
+    background-color: var(--color5);
+    position: relative;
+    bottom: 15%;
+    padding: 2%;
+}
+
+.projname span {
+    margin-left: 1%;
+    padding: 2%;
+    color: var(--color3);
+    font-weight: bolder;
+}
+
+.gallery img:hover {
+    opacity: .5;
+    border: 5px dotted var(--color5);
+}
+
+/* ------ Footer ------*/
+footer{
     font-style: italic;
     font-size: 1em;
     margin: auto;
     padding: 1%;
     text-align: center;
-  }
+}
