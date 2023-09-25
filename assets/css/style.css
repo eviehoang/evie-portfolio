@@ -1,34 +1,39 @@
+
+/* Universal Elements */
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 :root {
     --color1: #f194B8;
     --color2: black;
     --color3: white;
+    --color4: #B9E192;
+    --color5: #B3C7F7;
 }
 
 a{
     color: var(--color2);
     text-decoration: none;
-
 }
 
 /* Header Menu */
 header {
-    padding: 2%;
+    padding: 1.25%;
     margin: auto;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: var(--color3);
     color: var(--color2);
     width: 100%;
+    
 }
 
 header h1 {
     display: inline;
     font-size: 30px;
+    font-weight: bolder;
 }
 
 header ul{
@@ -37,7 +42,8 @@ header ul{
     display: inline-block;
     font-size: 20px;
     text-align: right;
-    width: 45%;
+    width: 50%;
+    padding: 0;
 }
 
 header ul li {
@@ -45,19 +51,48 @@ header ul li {
     display: inline-block;
     list-style-type: none;
     width: 20%;
-    
 }
-
-
 
   /* Banner W/ Logo CSS */
   .banner {
-    background-color: var(--color1);
+    background-color: var(--color4);
   }
   .banner img{
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    padding: 5%;
+    padding: 9%;
     max-width: 100%;
+    animation: wiggle 3s infinite;
+  }
+
+  /* Wiggle Animation for Logo */
+  /* Note: % refers to the keyframes along the entire animation sequence. */
+  @keyframes wiggle {
+    0% {transform: rotate(0deg);}
+    85% {transform: rotate(0deg)}
+    90% {transform: rotate(5deg);}
+    95% {transform: rotate(-5deg);}
+    100% {transform: rotate(0deg);}
+  }
+
+  /* About Me Section */
+article {
+    padding: 3%;
+    margin: auto;
+    background-color: var(--color3);
+    color: var(--color2);
+    width: 100%;
+
+  }
+
+
+
+  /* Footer */
+  footer{
+    font-style: italic;
+    font-size: 1em;
+    margin: auto;
+    padding: 1%;
+    text-align: center;
   }
