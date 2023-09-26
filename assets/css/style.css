@@ -150,7 +150,7 @@ article p {
 
 }
 
-.gallery {
+#gallery {
     display: flex;
     flex-wrap: wrap;
     opacity: 1.0;
@@ -182,14 +182,14 @@ article p {
 
 /* Contact Me Area */
 
-.subheader h3 {
+#contact h3 {
     padding: .5% .5% 0 .5%;
     margin: 0 0 0 2%;
     color: var(--color1);
     font-size: 1.25em;
 }
 
-.subheader p {
+.contactinfo  {
     padding: 0;
     margin-left: 4%;
 }
