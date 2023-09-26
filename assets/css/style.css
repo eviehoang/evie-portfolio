@@ -175,7 +175,7 @@ article p {
     font-weight: bolder;
 }
 
-.gallery img:hover {
+#gallery img:hover {
     opacity: .5;
     box-shadow: 0 0 5px 5px var(--color5);
 }
