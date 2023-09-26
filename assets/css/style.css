@@ -101,6 +101,7 @@ article {
     color: var(--color2);
     height: auto;
     overflow: hidden;
+    width: 85%;
 }
 
 article h2 {
@@ -111,11 +112,13 @@ article h3,
 article p {
     margin-left: 22%;
     margin-bottom: 1.5%;
+    text-align: left;
 }
 
 #portrait {
     float: left;
     max-height: 300px;
+    margin-right: 5%;
 
 }
 
@@ -127,11 +130,14 @@ article p {
 /* Portfolio Pieces */
 .box {
     display: flex;
+    margin-bottom: 0;
+
 }
 
 .box ul,
 .box li {
     list-style: none;
+
 }
 
 .gallery {
@@ -140,12 +146,14 @@ article p {
     opacity: 1.0;
     gap: 0 3%;
     height: 100%;
+    justify-content: space-evenly;
+    margin-top: 1%;
 }
 
 .projname {
     background-color: var(--color5);
     position: relative;
-    bottom: 15%;
+    bottom: 20%;
     padding: 10px;
     width: auto;
 }
@@ -162,11 +170,67 @@ article p {
     border: 5px dotted var(--color5);
 }
 
+/* Contact Me Area */
+
+.subheader h3 {
+    padding: .5% .5% 0 .5%;
+    margin: 0 0 0 2%;
+}
+
+.subheader p {
+    padding: 0;
+    margin-left: 4%;
+}
+
+.fa {
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+    margin: 1% 0 0 4%;
+}
+
+.fa:hover {
+    opacity: 0.5;
+}
+
 /* ------ Footer ------*/
 footer {
     font-weight: bold;
     font-size: 1em;
     margin: auto;
-    padding: 1%;
+    padding: 5%;
     text-align: center;
+}
+
+/* Media Sizing */
+
+@media screen and (max-width: 992px) {
+    .box {
+        min-width: 40%;
+    }
+
+    header {
+        max-width: 70%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .box {
+        flex-direction: column;
+        min-width: 100%;
+        margin: auto;
+    }
+
+    header {
+        flex-direction: column;
+        justify-content: center;
+        max-width: auto;
+    }
+
+    header h1{
+        display: none;
+    }
+    article h3, article p {
+        margin-left: auto;
+    }
 }
