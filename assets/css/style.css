@@ -113,7 +113,7 @@ article h2 {
     color: var(--color2);
 }
 
-article h3{
+article h3 {
     color: var(--color1);
     font-size: 1.5em;
 }
@@ -169,13 +169,11 @@ article p {
 }
 
 .projname span {
-    margin-left: 1%;
-    padding: 2%;
     color: var(--color3);
     font-weight: bolder;
 }
 
-#gallery img:hover {
+.galleryglow img:hover {
     opacity: .5;
     box-shadow: 0 0 5px 5px var(--color5);
 }
@@ -189,7 +187,7 @@ article p {
     font-size: 1.25em;
 }
 
-.contactinfo  {
+.contactinfo {
     padding: 0;
     margin-left: 4%;
 }
@@ -214,6 +212,13 @@ footer {
     text-align: center;
 }
 
+/* Project Box */
+#square {
+    width: 300px;
+    height: 300px;
+    background-image: url(/assets/images/Horiseon.png);
+    background-repeat: no-repeat;
+}
 
 /* Media Sizing */
 
@@ -240,10 +245,12 @@ footer {
         max-width: auto;
     }
 
-    header h1{
+    header h1 {
         display: none;
     }
-    article h3, article p {
+
+    article h3,
+    article p {
         margin-left: auto;
     }
 }
